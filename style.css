@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f0716;
+}
+
+/* Navbar */
+
+.container {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.navbar-box {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 70px;
+  box-shadow: 0 2px 10px #693dc4;
+  background-color: #0f0716;
+  z-index: 1000;
+}
+
+.navbar-box .menu {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-box .logo {
+  display: flex;
+  width: 45px;
+  height: 45px;
+}
+
+.navbar-box .menu li {
+  list-style-type: none;
+}
+
+.navbar-box .menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar-box .menu li a:hover {
+  color: #693dc4;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar */
+
+/* About */
+
+.about {
+  margin: 100px 70px;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-box .box-1 .text {
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.about-box .box-1 .text .nama {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about-box .box-1 .text .pendidikan {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-box .box-1 .text .passion {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.about-box .box-1 .social-media {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  background-color: #27135a;
+  border-radius: 30px;
+}
+
+.about-box .box-1 .social-media a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.about-box .box-1 .social-media a:hover {
+  color: #693dc4;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-box .box-2 .foto img {
+  width: 500px;
+  position: absolute;
+  z-index: 2;
+  top: 85px;
+  left: 60%;
+}
+
+/* About */
+
+/* Pembatas */
+
+.pembatas {
+  background-color: #000000;
+  margin-top: 140px;
+  height: 70px;
+}
+
+/* Pembatas */
+
+/* Experience */
+.experience {
+  margin: 100px 70px;
+}
+
+.experience-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.experience-box .box-1 h2 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.experience-box .box-1 h2::before {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.experience-box .my-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience-box .my-experience .card {
+  background-color: #27135a;
+  padding: 15px 20px;
+  border-radius: 15px;
+  width: 400px;
+}
+
+.experience-box .my-experience .year {
+  font-size: 22px;
+  color: #693dc4;
+  font-weight: 600;
+}
+
+.experience-box .my-experience .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.experience-box .my-experience .role {
+  font-size: 23px;
+  font-weight: bold;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.experience-box .box-2 h2 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.experience-box .box-2 h2::before {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.experience-box .my-education {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience-box .my-education .card {
+  background-color: #27135a;
+  padding: 15px 20px;
+  border-radius: 15px;
+  width: 400px;
+}
+
+.experience-box .my-education .year {
+  font-size: 22px;
+  color: #693dc4;
+  font-weight: 600;
+}
+
+.experience-box .my-education .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.experience-box .my-education .role {
+  font-size: 23px;
+  font-weight: bold;
+  color: #ffffff;
+  font-style: italic;
+}
+
+/* Experience */
+
+/* Project */
+
+.project {
+  margin: 100px 70px;
+  padding-block: 50px;
+}
+
+.project .container h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.project-box {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 140px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.project-box .card {
+  padding: 50px;
+  box-shadow: 0px 2px 5px #000000;
+  border-radius: 15px;
+  background-color: #27135a;
+  align-items: center;
+  width: 350px;
+  height: 580px;
+}
+
+.project-box .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-box .card .project-desc h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Project */
+
+/* Contact */
+
+/* Footer Contact */
+.contact {
+  background-color: #27135a;
+  padding: 20px 0;
+  color: white;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-media a.instagram:hover {
+  color: #693dc4;
+}
+
+.social-media a.wa:hover {
+  color: #693dc4;
+}
+
+.social-media a.gmail:hover {
+  color: #693dc4;
+}
+
+.contact-box h3 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.contact-box h3 span {
+  font-weight: bold;
+  color: #693dc4;
+}
+
+/* Contact */
